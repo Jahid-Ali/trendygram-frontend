@@ -1,0 +1,130 @@
+.home {
+  padding: 1px;
+  background-color: #dcebf0;
+}
+
+.home-card {
+  max-width: 600px;
+  height: max-content;
+  margin: 40px auto;
+  background-color: #bed8ebd0;
+}
+
+.material-icons:hover {
+  cursor: pointer;
+}
+
+.posted_name {
+  border-bottom: 1px solid rgb(240, 240, 240);
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+.card-content {
+  border-top: 1px solid rgb(224, 224, 224);
+  padding-top: 20px !important;
+}
+
+.who_comment {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.root {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.637);
+}
+
+.profileimg {
+  width: 140px;
+  height: 140px;
+  border-radius: 100px;
+}
+
+.info-1 {
+  display: flex;
+  width: 108%;
+  justify-content: space-between;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.commentpage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.commentpage1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: -10px;
+}
+
+.commentpage1 span {
+ padding-right: 5px;
+ color: #6e614c !important;
+ font-size: 14px;
+ font-weight: 500;
+ padding-top: 3px;
+}
+
+.commentpage a {
+ color: #6e6c69 !important;
+ font-size: 16px;
+}
+
+.comment-icon{
+  color: #cc711c;
+  padding-left: 5px;
+  padding-top: 3.5px;
+}
+
+
+
+/* FOR LOADING */
+.Home_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(236, 236, 236);
+  height: 91vh;
+}
+
+
+.loader {
+  border: 15px solid #ffffff;
+  border-radius: 50%;
+  border-top: 15px solid #1095ee;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin1 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin1 {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin1 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

@@ -1,0 +1,94 @@
+.main {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 100% !important;
+  background-color: #bed8ebd0;
+}
+
+.updateButton{
+  margin: 145px 99px 10px -167px;
+  color: #ecaf05;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.root {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.637);
+}
+
+.profileimg {
+  width: 140px;
+  height: 140px;
+  border-radius: 100px;
+  border: 2px dotted red;
+  padding: 8px;
+}
+
+.info-1 {
+  display: flex;
+  width: 108%;
+  justify-content: space-between;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item {
+  width: 30%;
+  border-left: 1px solid rgb(226, 226, 226);
+  border-right: 1px solid rgb(226, 226, 226);
+  margin: 5px;
+}
+
+.item:hover {
+  background-color: rgb(142, 252, 252);
+  transition: 0.3s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+
+/* FOR LOADING */
+.Profile_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  background-color: rgb(219, 219, 219);
+  height: 63vh;
+}
+
+
+
+.loader_profile {
+  border: 15px solid #ffffff;
+  border-radius: 50%;
+  border-top: 15px solid #1095ee;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin1 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin1 {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin1 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+

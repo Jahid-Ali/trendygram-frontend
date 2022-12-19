@@ -1,0 +1,123 @@
+nav {
+  background-color: #203a4b;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.mob_nav {
+  background-color: #203a4b;
+  position: sticky;
+  top: 97.5%;
+  height: 0px;
+}
+
+.mob_nav-wrapper {
+  /* margin: 0 8px; */
+  background-color: #203a4b;
+}
+.nav-wrapper {
+  /* margin: 0 8px; */
+  background-color: #203a4b;
+}
+
+.brand-logo {
+  color: rgb(60, 248, 248) !important;
+  padding-left: 20px !important;
+}
+
+li a {
+  color: rgb(60, 248, 248) !important;
+}
+
+.nav_profile a {
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.nav_post a {
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.logout_button {
+  padding: 0 25px 0 16px !important;
+  font-size: 13px;
+}
+
+.logout {
+  position: fixed;
+  top: 1px;
+  right: 0px;
+  margin-right: 7px;
+  font-size: 18px !important;
+  padding: 2px !important;
+}
+
+/* FOR SHORT SCREEN NAV */
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 125%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #203a4b;
+  border-top: 1px solid grey;
+  width: 100%;
+  height: 35px;
+}
+
+.mobile-nav > li:hover {
+  background-color: #b0dfff;
+  border-radius: 5px !important;
+}
+
+.comm {
+  line-height: 35px !important;
+  height: 33.8px !important;
+  color: rgb(255, 255, 255);
+  font-size: 26px !important;
+}
+
+.search{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.search1 {
+  color: rgb(65, 168, 253) !important;
+  line-height: 35px !important;
+  height: 33.8px !important;
+  color: rgb(255, 255, 255);
+  font-size: 26px !important;
+}
+
+.account_circle {
+  color: #00ff73;
+}
+.following_post {
+  color: #ff2058;
+}
+
+.mob_logout {
+  width: 40px;
+  padding-left: 7.5px;
+}
+
+.mob_logout:hover {
+  background: #b0dfff;
+  color: #ff2b2b;
+  border-radius: 5px !important;
+}
+
+/* SCREEN SET */
+@media only screen and (max-width: 992px) {
+  #nav-mobile {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex !important;
+    justify-content: space-evenly;
+  }
+}
