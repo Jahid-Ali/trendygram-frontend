@@ -9,7 +9,7 @@ const Home = () => {
 
   // run when page load
   useEffect(() => {
-    fetch("/allpost", {
+    fetch("https://jahid-ali-trendygram-backend.onrender.com/allpost", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },
@@ -23,7 +23,7 @@ const Home = () => {
 
   // FOR LIKE
   const likePost = (id) => {
-    fetch("/like", {
+    fetch("https://jahid-ali-trendygram-backend.onrender.com/like", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
