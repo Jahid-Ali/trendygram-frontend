@@ -17,7 +17,7 @@ const UserProfile = () => {
 
   // run when page load
   useEffect(() => {
-    fetch(`/user/${userid}`, {
+    fetch(`https://trendygram-backend.onrender.com/user/${userid}`, {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },
@@ -33,7 +33,7 @@ const UserProfile = () => {
 
   // FOR FOLLOW
   const followUser = () => {
-    fetch("/follow", {
+    fetch("https://trendygram-backend.onrender.com/follow", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -70,7 +70,7 @@ const UserProfile = () => {
 
   // FOR UN-FOLLOW
   const unfollowUser = () => {
-    fetch("/unfollow", {
+    fetch("https://trendygram-backend.onrender.com/unfollow", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
