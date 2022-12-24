@@ -22,7 +22,7 @@ const MobNavbar = () => {
   //function to fetch user
   const fetchUsers = (query) => {
     setSearch(query);
-    fetch("/search-users", {
+    fetch("https://trendygram-backend.onrender.com/search-users", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
