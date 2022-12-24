@@ -8,7 +8,7 @@ const CommentPage = () => {
 
   // run when page load
   useEffect(() => {
-    fetch(`/comm/${userid}`, {
+    fetch(`https://trendygram-backend.onrender.com/comm/${userid}`, {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },
@@ -23,7 +23,7 @@ const CommentPage = () => {
 
   // FOR COMMENT
   const makeComment = (text, id) => {
-    fetch("/comment", {
+    fetch("https://trendygram-backend.onrender.com/comment", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
