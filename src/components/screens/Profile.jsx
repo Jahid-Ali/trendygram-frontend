@@ -11,7 +11,7 @@ const Profile = () => {
 
   // run when page load
   useEffect(() => {
-    fetch("/mypost", {
+    fetch("https://trendygram-backend.onrender.com/mypost", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },
@@ -36,7 +36,7 @@ const Profile = () => {
       })
         .then((res) => res.json())
         .then((data) => {
-          fetch("/updatepic", {
+          fetch("https://trendygram-backend.onrender.com/updatepic", {
             method: "put",
             headers: {
               "Content-Type": "application/json",
