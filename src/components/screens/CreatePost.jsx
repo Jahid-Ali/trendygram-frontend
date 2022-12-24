@@ -11,7 +11,7 @@ const CreatePost = () => {
     // network request
     if (url) {
       const { title, body } = post;
-      fetch("/createpost", {
+      fetch("https://trendygram-backend.onrender.com/createpost", {
         method: "post",
         headers: {
           "Content-Type": "application/json ",
