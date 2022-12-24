@@ -16,7 +16,7 @@ const Reset = () => {
       return;
     }
 
-    fetch("/reset-password", {
+    fetch("https://trendygram-backend.onrender.com/reset-password", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
