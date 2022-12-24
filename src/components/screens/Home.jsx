@@ -9,7 +9,7 @@ const Home = () => {
 
   // run when page load
   useEffect(() => {
-    fetch("https://jahid-ali-trendygram-backend.onrender.com/allpost", {
+    fetch("https://trendygram-backend.onrender.com/allpost", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },
@@ -23,7 +23,7 @@ const Home = () => {
 
   // FOR LIKE
   const likePost = (id) => {
-    fetch("https://jahid-ali-trendygram-backend.onrender.com/like", {
+    fetch("https://trendygram-backend.onrender.com/like", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -53,7 +53,7 @@ const Home = () => {
 
   // FOR UNLIKE
   const unLikePost = (id) => {
-    fetch("/unlike", {
+    fetch("https://trendygram-backend.onrender.com/unlike", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -82,7 +82,7 @@ const Home = () => {
 
   // FOE DELETE POST
   const deletePost = (postid) => {
-    fetch(`/deletepost/${postid}`, {
+    fetch(`https://trendygram-backend.onrender.com/deletepost/${postid}`, {
       method: "delete",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
