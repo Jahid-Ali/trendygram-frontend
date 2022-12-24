@@ -10,7 +10,7 @@ const SubsUserPost = () => {
 
   // run when page load
   useEffect(() => {
-    fetch("/getsubpost", {
+    fetch("https://trendygram-backend.onrender.com/getsubpost", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },
@@ -24,7 +24,7 @@ const SubsUserPost = () => {
 
   // FOR LIKE
   const likePost = (id) => {
-    fetch("/like", {
+    fetch("https://trendygram-backend.onrender.com/like", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -54,7 +54,7 @@ const SubsUserPost = () => {
 
   // FOR UNLIKE
   const unLikePost = (id) => {
-    fetch("/unlike", {
+    fetch("https://trendygram-backend.onrender.com/unlike", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
@@ -84,7 +84,7 @@ const SubsUserPost = () => {
 
   // FOE DELETE POST
   const deletePost = (postid) => {
-    fetch(`/deletepost/${postid}`, {
+    fetch(`https://trendygram-backend.onrender.com/deletepost/${postid}`, {
       method: "delete",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
