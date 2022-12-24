@@ -68,7 +68,7 @@ const Signup = () => {
       return;
     }
 
-    fetch("/signup", {
+    fetch("https://trendygram-backend.onrender.com/signup", {
       method: "post",
       headers: {
         "content-Type": "application/json",
