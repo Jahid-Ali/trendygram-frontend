@@ -19,7 +19,7 @@ const Signin = () => {
       M.toast({ html: "invalid email", classes: "#c62828 red darken-3" });
       return;
     }
-    fetch("https://jahid-ali-trendygram-backend.onrender.com/signin", {
+    fetch("https://trendygram-backend.onrender.com/signin", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
