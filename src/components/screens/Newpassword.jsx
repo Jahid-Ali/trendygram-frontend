@@ -13,7 +13,7 @@ const Newpassword = () => {
 
 
   const PostData = () => {
-    fetch("/new-password", {
+    fetch("https://trendygram-backend.onrender.com/new-password", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
